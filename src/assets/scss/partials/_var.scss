@@ -1,22 +1,22 @@
-// Light mode variables
-$bg-color-light: #ffffff;
-$text-color-light: #000000;
 // Dark mode variables
-$bg-color-dark: #1a1a1a;
-$text-color-dark: #f5f5f5;
+$bg_color_dark: #303030;
+$text_color_dark: #f5f5f5;
+// Light mode variables
+$bg_color_light: #f3eeee;
+$text_color_light: #000000;
 
-$dark: #333333;
-$neutral: #aaaaaa;
-$light: #edf3f5;
-$nav_bg: #cfcfcf;
-$btn: #08064c;
-$info_light: #efd17f;
-$shadow_stack: #13e784;
-$secondary: #c788f3a3;
-$clr_bruise : #010e16;
-$card_news_header : #93c5e599;
-$card_news_body : #baddf4;
-$clr_tulip_tree : #efab43;
-$clr_juice_button_2 : #ff6518;
-$lime: #69bf14;
-$clr_juice_button: #44bc84;
+
+// Dark mode nav
+$bg_nav_dark: #7357d0;
+$text_nav_dark: #000000;
+// Light mode nav
+$bg_nav_light: #252525;
+$text_nav_light: #7357d0;
+// Variabili per i link
+$link_nav_dark: #ffffff;
+$link_hover_nav_dark: #303030;
+$link_active_nav_dark: #303030;
+
+$link_nav_light: #7357d0;
+$link_active_nav_light: #ffffff;
+

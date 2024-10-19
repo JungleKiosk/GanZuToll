@@ -4,25 +4,17 @@
 @use "./partials/_navbar.scss";
 @use "./partials/_footer.scss";
 
-// app.scss
 
-body {
+
+body.dark_mode {
   background-color: $bg_color_dark;
   color: $text_color_dark;
 }
 
-.light_mode {
+body.light_mode {
   background-color: $bg_color_light;
   color: $text_color_light;
-
-  // Override other components
-  .navbar {
-    background-color: $bg_color_light;
-    color: $text_color_light;
-  }
-
-  .footer {
-    background-color: $bg_color_light;
-    color: $text_color_light;
-  }
 }
+
+
+

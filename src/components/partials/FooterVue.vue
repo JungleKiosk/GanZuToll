@@ -5,7 +5,7 @@
 
 
 <template>
-  <footer id="footer" class="p-5 bg-dark">
+  <footer id="footer" class="p-5 bg-dark text-light">
     <div class="row justify-content-center mt-5">
 
       <div class="col-sm-4 col-md-3 text-center">
