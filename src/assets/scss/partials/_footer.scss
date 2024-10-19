@@ -1,3 +1,15 @@
+@use "./_var.scss" as *;
+
+#footer {
+  background-color: $bg_color_dark;
+  color: $text_color_dark;
+
+  .light_mode & {
+    background-color: $bg_color_light;
+    color: $text_color_light;
+  }
+}
+
 .icon_social {
   width: 10%;
 }
@@ -6,9 +18,7 @@ ul li {
   list-style: none;
 }
 
-#footer {
-  height: 400px;
-}
+// _footer.scss
 
 @media (max-width: 786px) {
   .icon_social {
