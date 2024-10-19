@@ -44,7 +44,9 @@ export default {
 </script>
 
 <template>
-  <NavbarVue :isDarkMode="isDarkMode" :toggleTheme="toggleTheme" />
+
+    <NavbarVue :isDarkMode="isDarkMode" :toggleTheme="toggleTheme" />
+
 
   <div class="content mt-5 pt-5">
     <router-view />

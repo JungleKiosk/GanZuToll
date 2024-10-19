@@ -1,4 +1,5 @@
-@use "./../../../node_modules/bootstrap/scss/bootstrap.scss";
+@use "./../../../node_modules/bootstrap/scss/bootstrap.scss" as *;
+
 
 @use "./partials/_var.scss" as *;
 @use "./partials/_navbar.scss";

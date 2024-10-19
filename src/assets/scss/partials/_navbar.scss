@@ -1,37 +1,10 @@
-@use "./_var.scss" as *;
 
-.navbar {
-  background-color: #333333;
-  color: #ffffff;
 
-  a.navlink {
-    color: #ffffff;
-
-    &:hover {
-      color: #cccccc;
-    }
-
-    &:active, &:focus, &:visited {
-      color: #aaaaaa;
-    }
-  }
+.navbarstyle{
+  background-color: #85dff3e9;
 }
 
-.light_mode .navbar {
-  background-color: #f0f0f0;
-  color: #000000; 
-
-  a.navlink {
-    color: #000000;
-
-    &:hover {
-      color: #333333;
-    }
-
-    &:active, &:focus, &:visited {
-      color: #555555;
-    }
-  }
+.navlinkstyle{
+  color: #12104b;
+  font-weight: bold;
 }
-
-

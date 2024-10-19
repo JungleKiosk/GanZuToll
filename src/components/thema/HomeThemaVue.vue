@@ -1,10 +1,62 @@
 <script>
+import { themen } from './../../data/thema.js'; // Importa i dati dal file thema.js
+import { useRouter } from 'vue-router';
 
+export default {
+  name: 'ThemenList',
+  data() {
+    return {
+      themenList: themen // Carica i dati dei temi
+    };
+  },
+  setup() {
+    const router = useRouter();
+
+    const goToThemePage = (route) => {
+      router.push(route); // Naviga verso la pagina del tema
+    };
+
+    return { goToThemePage };
+  }
+};
 </script>
 
 <template>
-   <h1>Thema</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Themen</h1>
+        <p>Wählen Sie ein Thema, das Sie interessiert</p>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-4" v-for="thema in themenList" :key="thema.id">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">{{ thema.name }}</h5>
+            <p class="card-text">{{ thema.description }}</p>
+            <button @click="goToThemePage(thema.route)" class="btn btn-primary">
+              Gehe zu {{ thema.name }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
-<style>
+<style scoped>
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  text-align: center;
+}
 </style>
