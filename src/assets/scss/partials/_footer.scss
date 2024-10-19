@@ -1,0 +1,17 @@
+.icon_social {
+  width: 10%;
+}
+
+ul li {
+  list-style: none;
+}
+
+#footer {
+  height: 400px;
+}
+
+@media (max-width: 786px) {
+  .icon_social {
+    width: 20%;
+  }
+}

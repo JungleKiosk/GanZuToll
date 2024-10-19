@@ -1,0 +1,9 @@
+@use './../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@use "./partials/_var.scss" as *;
+@use "./partials/_footer.scss";
+
+body {
+    background-color: $bg_body;
+    color: $light;
+}
