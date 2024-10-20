@@ -155,8 +155,53 @@ export default {
 
         <!-- La sezione della spiegazione per Törggelen -->
         <div v-if="showExplanationToerggelen">
-          <h3>Spiegazione Törggelen</h3>
-          <!-- Contenuto della spiegazione per Törggelen -->
+          <h3>Die Nebensätze</h3>
+          <a
+            href="https://www.deutschesinstitut.it/das-gibt-es-nicht/#:~:text=es%20gibt%20si%20riferisce%20all,non%20ci%20sta%20es%20gibt.">
+            Webressource</a>
+          <p>
+            Una frase secondaria <span class="dict">(Nebensätze)</span> è una frase introdotta da una congiunzione
+            [p.es. quando, perché, che, se…] e può stare
+            prima o dopo una frase principale. La congiunzione “spinge” il verbo coniugato: il verbo lascia la sua
+            seconda posizione, sorpassa tutti gli altri elementi [come pronomi, avverbi, verbi all’nfinito, participi e
+            perfino intere frasi secondarie] e si posa nell’ultima posizione. <br><br>
+            La frase: <br>
+            <span class="dict">Haben wir auf einem Bauernhof (maso) übernachtet, der die Kriterien des Roter Hahn
+              erfüllt.</span>
+            <br>
+            ha una <span class="dict">frase secondaria</span> relativa che <span
+              style="text-decoration: underline;">descrive meglio il sostantivo</span>
+            Bauernhof (maso): <br><br>
+
+            Frase principale: Haben wir auf einem Bauernhof übernachtet.
+            <br>
+            Qui il verbo haben è in posizione normale (seconda posizione).
+            <br>
+            <br>
+            Frase secondaria relativa: der die Kriterien des Roter Hahn erfüllt.
+            <br>
+          <h4>Spiegazione della frase secondaria:</h4>
+          La frase secondaria inizia con il <span class="dict"></span>pronome relativo "der", che si riferisce a
+          Bauernhof. <br>
+          Il <span class="dict">pronome relativo</span>
+          (che cambia in base al genere e al caso del sostantivo che descrive) introduce la frase secondaria e si usa
+          per fornire ulteriori dettagli su qualcosa già menzionato nella frase principale. <br><br>
+          <span class="dict">der</span>: pronome relativo (genere maschile, Nominativo), poiché Bauernhof è maschile.
+          <br>
+          <span class="dict">die Kriterien des Roter Hahn erfüllt</span>: qui il verbo erfüllt (soddisfa) è posto alla
+          fine della frase
+          secondaria, come è normale nelle frasi secondarie tedesche.
+          Nelle frasi secondarie <span class="dict">(Nebensätze)</span>, <span style="text-decoration: underline;">il
+            verbo va sempre alla fine</span>.
+          <br><br>
+          Esempi: <br><br>
+          Ich muss es machen. → Ich putze, weil ich es machen muss. [Faccio le pulizie perché devo farle.]<br><br>
+
+          Es regnet. → Ich gehe nach draußen, obwohl es regnet. [Esco nonostante piova.]<br><br>
+
+          Er hat mir ein Geschenk mitgebracht. → Ich habe mich gefreut, dass er mir ein Geschenk mitgebracht hat. [Sono
+          stato contento che mi avesse portato un regalo.]
+          </p>
           <hr>
         </div>
       </div>

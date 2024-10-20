@@ -26,7 +26,7 @@ export default {
     <div class="row">
       <div class="col-12">
         <h1>Themen</h1>
-        <p>Wählen Sie ein Thema, das Sie interessiert</p>
+        <p>Wählen Sie ein Thema, lesen Sie und lernen Sie!!!</p>
       </div>
     </div>
     
