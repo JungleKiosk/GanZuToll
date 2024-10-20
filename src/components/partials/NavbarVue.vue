@@ -23,7 +23,7 @@ export default {
       <div class="container-fluid">
         <RouterLink class="navbar-brand px-5" to="/">🥨</RouterLink>
         <div class="navbar-content" id="navbarNav">
-          <RouterLink style="text-decoration: none;" class="navlinkstyle navlink me-2" to="/thema">Thema</RouterLink> <!-- Assicurati di usare "navlink" -->
+          <RouterLink style="text-decoration: none;" class="navlinkstyle navlink me-2" to="/thema">Themen</RouterLink> <!-- Assicurati di usare "navlink" -->
           <span @click="toggleTheme" class="theme-toggle">
             {{ isDarkMode ? '☀️' : '🌙' }}
           </span>
