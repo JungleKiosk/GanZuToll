@@ -3,7 +3,7 @@
 export const themen = [
     {
       id: 1,
-      name: "Urlaub",
+      name: "",
       description: "Entdecken Sie die besten Urlaubsziele.",
       route: "/urlaub"
     },
@@ -15,9 +15,9 @@ export const themen = [
     },
     {
       id: 3,
-      name: "Freizeit",
-      description: "Ideen für Ihre Freizeitgestaltung.",
-      route: "/freizeit"
+      name: "Uhr",
+      description: "",
+      route: "/uhr"
     }
   ];
   
