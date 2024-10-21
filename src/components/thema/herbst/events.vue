@@ -1,6 +1,6 @@
 <script>
 import Herbst from './Herbst.vue';
-import Modal from './modals/ModHerbst.vue';
+import Modal from '../../partials/ModHerbst.vue';
 
 export default {
   name: "events",
@@ -213,16 +213,6 @@ export default {
 </template>
 
 <style scoped>
-.nota {
-  color: brown;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.dict {
-  color: rgb(255, 140, 0);
-  font-weight: bold;
-}
 
 /* Stile per le immagini */
 .event-images img {
