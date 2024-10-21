@@ -140,15 +140,15 @@ export default {
 
           <p v-if="exercise.checked">
             <span :class="{'correct': exercise.correct, 'incorrect': !exercise.correct}">
-              {{ exercise.correct ? 'Risposta corretta!' : 'Risposta sbagliata.' }}
+              {{ exercise.correct ? 'Richtige Antwort!🍺' : 'Falsche Antwort 😑' }}
             </span>
-            La risposta giusta è: <strong>{{ exercise.correctAnswer }}</strong>
+            Die richtige Antwort ist: <strong class="dict">{{ exercise.correctAnswer }}</strong>
           </p>
         </div>
 
         <!-- Pulsante per verificare tutte le risposte -->
         <button @click="checkAllAnswers" class="btn btn-primary">
-          Verifica tutte le risposte
+          Alles korrigieren
         </button>
       </div>
     </div>
