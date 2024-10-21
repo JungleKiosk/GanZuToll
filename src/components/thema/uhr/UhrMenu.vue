@@ -22,7 +22,7 @@ export default {
             <router-link class="nav-link" to="/Kurz">Kurz</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/tagesablauf">Tagesablauf</router-link>
+            <router-link class="nav-link" to="/uhraufgaben">Aufgaben</router-link>
           </li>
         </ul>
       </div>
