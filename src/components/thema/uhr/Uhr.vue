@@ -42,7 +42,8 @@ export default {
         <div class="row justify-content-center">
             <div class="col-12 col-lg-6">
                 <h1>Wie spät ist es? ⌚</h1>
-                <p>
+                <img src="../../../assets/img/uhr/marienplazt.webp" alt="">
+                <p class="mt-4">
                     Ci sono due modi principali per chiedere l'orario:
                 <ul>
                     <li> - Wie <span class="nota" @click="openModal('spät')">spät</span> ist es? Che ora è?</li>

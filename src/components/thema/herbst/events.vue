@@ -214,10 +214,4 @@ export default {
 
 <style scoped>
 
-/* Stile per le immagini */
-.event-images img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 15px;
-}
 </style>
