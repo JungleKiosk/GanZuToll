@@ -1,10 +1,12 @@
 <script>
 import Modal from '../../partials/ModHerbst.vue';
+import UhrMenu from './UhrMenu.vue';
 
 export default {
     name: "uhr",
     components: {
-        Modal
+        Modal,
+        UhrMenu
     },
     data() {
         return {
@@ -16,7 +18,10 @@ export default {
                 Bahnhof: "der Bahnhof",
                 Flughafen: "der Flughafen",
                 Zeitungen: "die Zeitungen",
-                Radio: "das Radio"
+                Radio: "das Radio",
+                Zum_Beispiel: "Ad esempio",
+                z_B: "abbreviazione spesso usata per Zum Beispiel",
+                Stunde: "orario"
             },
             currentNota: ""
         };
@@ -34,8 +39,9 @@ export default {
 
 <template>
     <div class="container">
+        <UhrMenu></UhrMenu>
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
+            <div class="col-12 col-lg-6">
                 <h1>Wie spät ist es? ⌚</h1>
                 <p>
                     Ci sono due modi principali per chiedere l'orario:
@@ -44,9 +50,10 @@ export default {
                     <li>- Wie viel Uhr ist es? Che ora è?</li>
                 </ul>
                 Entrambe le frasi sono molto comuni e si usano in situazioni formali e informali. <br>
-                Per indicare ore esatte, si usa semplicemente <span class="dict">Es ist</span> seguito dall'ora.
+                <img src="../../../assets/img/uhr/uhr.jpg" alt="">
+
                 </p>
-                <h2>Informelle und formelle Stunde</h2>
+                <h2>Informelle <span class="nota" @click="openModal('Stunde')">Stunde</span></h2>
                 <p>
 
                 </p>
@@ -59,9 +66,50 @@ export default {
                     🕙Es ist zehn Uhr. = Sono le dieci.<br>
                     Per indicare ore esatte, si usa semplicemente <span class="dict">Es ist</span> seguito dall'ora.
                 </p>
-
-
-
+                <h3>Minuti</h3>
+                <p>
+                    Per esprimere i minuti, ci sono alcune regole fondamentali da ricordare. <br>
+                    Nella <span style="text-decoration: underline;">prima mezz'ora</span> 🌓la struttura è: <br>
+                <h4 class="text-bg-light">Minuti + <span class="dict">nach</span> + ora <br></h4>
+                <span class="nota" @click="openModal('Zum_Beispiel')">Zum Beispiel</span>: <br>
+                Es ist fünf <span class="dict">nach</span> zwei. = Sono le due e cinque.<br>
+                Es ist zehn <span class="dict">nach</span> drei. = Sono le tre e dieci.<br>
+                Es ist zwanzig <span class="dict">nach</span> vier. = Sono le quattro e venti.
+                <br>
+                <br>
+                Nella <span style="text-decoration: underline;">seconda mezz'ora</span> 🌗 la struttura è: <br>
+                <h4 class="text-bg-light">Minuti + <span class="dict">vor</span> + ora <br></h4>
+                <span class="nota" @click="openModal('Zum_Beispiel')">Zum Beispiel</span>: <br>
+                Es ist fünf <span class="dict">vor</span> drei. = Sono le tre meno cinque. <br>
+                Es ist zehn <span class="dict">vor</span> vier. = Sono le quattro meno dieci. <br>
+                Es ist zwanzig <span class="dict">vor</span> fünf. = Sono le cinque meno venti.
+                </p>
+                <h3>Mezze</h3>
+                <p>
+                    In tedesco si esprime la "mezza ora" con la seguente struttura: <br>
+                <h4 class="text-bg-light"><span class="dict">halb</span> + ora successiva l'ora corrente <br></h4>
+                quindi <span class="nota" @click="openModal('z_B')">z.B.</span>: <br>
+                🕝halb drei = due e mezza🕝. <br>
+                🕧halb eine = dodici e mezza🕧
+                </p>
+                <h3>Quarti</h3>
+                <p>
+                    In tedesco si esprime il "quarto d'ora" con la seguente struttura: <br>
+                <h4 class="text-bg-light"><span class="dict">Viertel</span> + <span class="dict">nach</span>/<span
+                        class="dict">vor</span> + ora<br></h4>
+                quindi <span class="nota" @click="openModal('z_B')">z.B.</span>: <br>
+                Es ist <span class="dict">Viertel</span> nach zwei. = Sono le due e un quarto.<br>
+                Es ist <span class="dict">Viertel</span> vor drei. = Sono le tre meno un quarto
+                </p>
+                <p>
+                    Con <span class="dict">nach</span> significa "dopo" l'ora corrente, mentre <span
+                        class="dict">vor</span>
+                    significa
+                    "prima" dell'ora successiva.
+                </p>
+                <hr>
+                <img src="../../../assets/img/uhr/uhr.jpg" alt="">
+                <hr>
 
 
 

@@ -10,6 +10,7 @@ import activity from "../components/thema/herbst/activity.vue";
 import events from "../components/thema/herbst/events.vue";
 /* UHR */
 import Uhr from "../components/thema/uhr/Uhr.vue";
+import tagesablauf from "../components/thema/uhr/tagesablauf.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -49,10 +50,16 @@ const router = createRouter({
       name: "events",
       component: events,
     },
+    /* UHR */
     {
       path: "/uhr",
       name: "uhr",
       component: Uhr,
+    },
+    {
+      path: "/tagesablauf",
+      name: "tagesablauf",
+      component: tagesablauf,
     },
   ],
 });
