@@ -19,10 +19,10 @@ export default {
             <router-link class="nav-link" to="/uhr">Uhr</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/tagesablauf">Tagesablauf</router-link>
+            <router-link class="nav-link" to="/Kurz">Kurz</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/activity"></router-link>
+            <router-link class="nav-link" to="/tagesablauf">Tagesablauf</router-link>
           </li>
         </ul>
       </div>

@@ -10,6 +10,7 @@ import activity from "../components/thema/herbst/activity.vue";
 import events from "../components/thema/herbst/events.vue";
 /* UHR */
 import Uhr from "../components/thema/uhr/Uhr.vue";
+import kurz from "../components/thema/uhr/kurz.vue";
 import tagesablauf from "../components/thema/uhr/tagesablauf.vue";
 
 const router = createRouter({
@@ -55,6 +56,11 @@ const router = createRouter({
       path: "/uhr",
       name: "uhr",
       component: Uhr,
+    },
+    {
+      path: "/kurz",
+      name: "kurz",
+      component: kurz,
     },
     {
       path: "/tagesablauf",

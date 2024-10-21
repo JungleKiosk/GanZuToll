@@ -2,7 +2,7 @@
 import UhrMenu from './UhrMenu.vue';
 
 export default {
-  name: "food",
+  name: "tagesablauf",
   components: {
     UhrMenu
   }

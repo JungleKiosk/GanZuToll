@@ -11,10 +11,9 @@ export default {
     data() {
         return {
             showModal: false,
-            showExplanationErntdankfest: false, // Variabile di stato per la prima sezione
-            showExplanationToerggelen: false, // Variabile di stato per la seconda sezione
             currentDescription: "",
             notaDescriptions: {
+                spät:"tardi",
                 Bahnhof: "der Bahnhof",
                 Flughafen: "der Flughafen",
                 Zeitungen: "die Zeitungen",
@@ -46,10 +45,12 @@ export default {
                 <p>
                     Ci sono due modi principali per chiedere l'orario:
                 <ul>
-                    <li> - Wie spät ist es? Che ora è? letteralmente: Quanto tardi è?</li>
+                    <li> - Wie <span class="nota" @click="openModal('spät')">spät</span> ist es? Che ora è?</li>
                     <li>- Wie viel Uhr ist es? Che ora è?</li>
                 </ul>
-                Entrambe le frasi sono molto comuni e si usano in situazioni formali e informali. <br>
+                Entrambe le frasi sono molto comuni e si usano in situazioni formali e informali. 
+                <br>
+                <br>
                 <img src="../../../assets/img/uhr/uhr.jpg" alt="">
 
                 </p>
