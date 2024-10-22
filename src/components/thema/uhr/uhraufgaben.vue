@@ -70,7 +70,7 @@ export default {
         },
         {
           question: "Es ist 21:30 🕤",
-          options: ["halb neun", "Viertel vor zehn","halb zehn" ],
+          options: ["halb neun", "Viertel vor zehn", "halb zehn"],
           correctAnswer: "halb zehn",
           checked: false,
           correct: false,
@@ -109,6 +109,13 @@ export default {
         exercise.checked = true;
         exercise.correct = userAnswer === correctAnswer;
       });
+    },
+    refreshExercises() {
+      this.exercises.forEach(exercise => {
+        exercise.checked = false;
+        exercise.correct = false;
+      });
+      this.userAnswers = Array(10).fill(null); // Reset delle risposte utente
     }
   }
 };
@@ -119,27 +126,21 @@ export default {
     <UhrMenu></UhrMenu>
     <div class="row justify-content-center">
       <div class="col-12 col-lg-6">
-        <h2>Aufgaben</h2>
 
         <!-- Ciclo per generare gli esercizi -->
         <div v-for="(exercise, index) in exercises" :key="index" class="exercise">
           <h4>{{ exercise.question }}</h4>
-          
+
           <div class="options">
             <label v-for="(option, idx) in exercise.options" :key="idx">
-              <input
-                type="radio"
-                :name="'exercise-' + index"
-                :value="option"
-                v-model="userAnswers[index]"
-                :disabled="exercise.checked"
-              />
+              <input type="radio" :name="'exercise-' + index" :value="option" v-model="userAnswers[index]"
+                :disabled="exercise.checked" />
               {{ option }}
             </label>
           </div>
 
           <p v-if="exercise.checked">
-            <span :class="{'correct': exercise.correct, 'incorrect': !exercise.correct}">
+            <span :class="{ 'correct': exercise.correct, 'incorrect': !exercise.correct }">
               {{ exercise.correct ? 'Richtige Antwort!🍺' : 'Falsche Antwort 😑' }}
             </span>
             Die richtige Antwort ist: <strong class="dict">{{ exercise.correctAnswer }}</strong>
@@ -147,14 +148,18 @@ export default {
         </div>
 
         <!-- Pulsante per verificare tutte le risposte -->
-        <button @click="checkAllAnswers" class="btn btn-primary">
+        <button @click="checkAllAnswers" class="btn btn-primary mx-3">
           Alles korrigieren
         </button>
       </div>
+      <!-- Pulsante per il refresh degli esercizi -->
+      <button @click="refreshExercises" class="btn btn-link text-dark">
+        🔃Erneut versuchen
+      </button>
     </div>
 
     <Modal v-if="showModal" :isVisible="showModal" :description="currentDescription" @close="showModal = false"
-        @save="saveDescription" />
+      @save="saveDescription" />
   </div>
 </template>
 

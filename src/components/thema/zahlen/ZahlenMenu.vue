@@ -22,7 +22,7 @@ export default {
             <router-link class="nav-link" to="/massnahmen">Maßnahmen</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/zhalenaufgaben">Aufgaben</router-link>
+            <router-link class="nav-link" to="/zahlenaufgaben">Aufgaben</router-link>
           </li>
         </ul>
       </div>

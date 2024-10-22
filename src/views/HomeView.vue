@@ -8,7 +8,7 @@ export default {
   <div class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-12 mb-5">
-        <h1 class="display-1"><strong>Willkommen in <span class="dict">GanZuToll</span>🥨</strong></h1>
+        <h1 class="display-1"><strong>Willkommen in <span class="dict">GanZuToll</span><img class="logo" src="../assets/img/logo/prezelogo.png" alt=""></strong></h1>
         <br>
         <br>
         <p class="display-5">
@@ -55,4 +55,10 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+.logo{
+  width:20%;
+}
+
+</style>

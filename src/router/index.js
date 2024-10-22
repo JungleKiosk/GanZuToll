@@ -13,6 +13,8 @@ import kurz from "../components/thema/uhr/kurz.vue";
 import uhraufgaben from "../components/thema/uhr/uhraufgaben.vue";
 /* ZAHLEN */
 import Zahlen from "../components/thema/zahlen/Zahlen.vue";
+import zahlenaufgaben from "../components/thema/zahlen/zahlenaufgaben.vue";
+import massnahmen from "../components/thema/zahlen/massnahmen.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -68,7 +70,17 @@ const router = createRouter({
       path: "/zahlen",
       name: "zahlen",
       component: Zahlen,
-    }
+    },
+    {
+      path: "/zahlenaufgaben",
+      name: "zahlenaufgaben",
+      component: zahlenaufgaben,
+    },
+    {
+      path: "/massnahmen",
+      name: "massnahmen",
+      component: massnahmen,
+    },
   ],
 });
 
