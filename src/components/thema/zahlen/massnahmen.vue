@@ -8,7 +8,7 @@ export default {
         ZahlenMenu,
         Modal
     },
-    data() {
+    data() { 
         return {
             dialogues: [
                 {
