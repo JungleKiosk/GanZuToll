@@ -1,11 +1,7 @@
 @use "./../../../node_modules/bootstrap/scss/bootstrap.scss" as *;
 
-
 @use "./partials/_var.scss" as *;
 @use "./partials/_navbar.scss";
-
-
-
 
 body.dark_mode {
   background-color: $bg_color_dark;
@@ -17,7 +13,25 @@ body.light_mode {
   color: $text_color_light;
 }
 
-a{
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #85dff3;
+  height: 123px;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 140, 0);
+}
+
+body::-webkit-scrollbar-track {
+  border-left: 1px solid #85dff3;
+}
+
+a {
   color: #0d8ca9;
 }
 
@@ -37,4 +51,3 @@ img {
   height: auto;
   border-radius: 20px;
 }
-

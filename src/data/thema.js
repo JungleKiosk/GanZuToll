@@ -5,7 +5,7 @@ export const themen = [
     id: 1,
     name: "Zahlen",
     description: "",
-    route: "/events",
+    route: "/zahlen",
   },
   {
     id: 2,
@@ -15,14 +15,8 @@ export const themen = [
   },
   {
     id: 3,
-    name: "",
-    description: "Entdecken Sie die besten Urlaubsziele.",
-    route: "/urlaub",
-  },
-  {
-    id: 4,
     name: "Herbst",
     description: "",
     route: "/events",
-  },
+  }
 ];

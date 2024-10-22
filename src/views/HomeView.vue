@@ -23,8 +23,8 @@ export default {
       <div class="col-12 col-lg-4 my-5">
         <h2 class="display-3">Theorie</h2>
         <p class="lead">
-          Hier finden Sie alle wichtigen Regeln und Konzepte, um die deutsche Sprache besser zu verstehen. <br>
-          Studieren Sie die Theorie, um eine solide Basis zu schaffen.
+          Sie finden hier einige wichtige Regeln und Konzepte, um die deutsche Sprache besser zu verstehen. Lernen Sie
+          die Theorie, um eine solide Grundlage zu schaffen.
         </p>
       </div>
       <div class="col-12 col-lg-8 my-5">
@@ -35,19 +35,17 @@ export default {
       <div class="col-12 col-lg-4 my-5">
         <h2 class="display-3">Vertiefungen</h2>
         <p class="lead">
-          Entdecken Sie hier weiterführende Inhalte und vertiefen Sie Ihr Wissen. <br>
-          Diese Sektion ist perfekt, um Ihr Verständnis der Sprache zu erweitern.
+          Vertiefen Sie Ihre Kenntnisse und erweitern Sie Ihr Verständnis für die Sprache.
         </p>
       </div>
       <div class="col-12 col-lg-8 my-5">
-        <img style="width: 80%;" src="../assets/img/home/home_2.png" alt="">
+        <img style="width: 100%;" src="../assets/img/home/home_2.png" alt="">
       </div>
       <!-- Übung -->
       <div class="col-12 col-lg-4 my-5">
         <h2 class="display-3">Übung</h2>
         <p class="lead">
-          Nachdem Sie die Theorie und die Vertiefungen gelesen haben, <br>
-          überprüfen Sie Ihr Lernen mit ein wenig Übung!
+          Nach der Lektüre der Theorie und der Erkenntnisse können Sie Ihr Wissen in der Praxis testen!
         </p>
       </div>
       <div class="col-12 col-lg-8">
@@ -57,6 +55,4 @@ export default {
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
