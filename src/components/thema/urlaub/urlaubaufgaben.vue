@@ -169,6 +169,60 @@ export default {
             <div class="col-12 col-lg-8">
                 <h1>Ergänzen Sie</h1>
                 <h4>Eine Postkarte aus dem Urlaub - Weltreise</h4>
+                <p>
+                    Hallo Sven, wie geht es dir?
+                    Unsere Weltreise hat gut angefangen.
+                    <br>
+                    <br>
+                    Wir sind zuerst nach Bangkok geflogen
+                    – Bangkok ist wunderschön!
+                    <br>
+                    <br>
+                    Wir haben dort eine Stadtrundfahrt gemacht, die Tempel gesehen
+                    und eine Vorstellung mit thailändischen Tänzen besucht – das war ganz toll!
+                    <br>
+                    <br>
+                    Dann sind wir weiter nach Tokio gereist. In Tokio habe ich viele Souvenirs gekauft, auch ein
+                    nettes Souvenir für dich.
+                    <br>
+                    <br>
+                    Auf Hawaii haben wir dann zwei Tage nur gefaulenzt – Strand, Meer, Sonne, kühle Drinks –
+                    fantastisch!
+                    <br>
+                    <br>
+                    Heute sind wir zum Grand Canyon gefahren, das war wirklich beeindruckend!
+                    <br>
+                    <br>
+                    In Las Vegas sind wir natürlich ins Spielcasino gegangen, wir haben zwar ein bisschen Geld
+                    verloren, aber wir haben auch viel Spaß gehabt.
+                    <br>
+                    <br>
+                    Natürlich haben wir überall zu viel gegessen und sind zu dick geworden!
+                    <br>
+                    <br>
+                    Wir haben immer in
+                    3 – Sterne – Hotels geschlafen,
+                    <br>
+                    <br>
+                    aber nicht alle sind gut gewesen.
+                    <br>
+                    <br>
+                    Normalerweise spreche ich
+                    nicht gut Englisch, aber auf unserer Reise habe ich fast jeden Tag Englisch gesprochen.
+                    <br>
+                    <br>
+                    Ich habe viel fotografiert und wenn wir wieder nach Hause kommen, zeige ich dir die Fotos.
+                    <br>
+                    <br>
+                    In zwei Wochen sind wir wieder zu Hause.
+                    Dann rufe ich dich an.
+                    Arbeite nicht zu viel.
+                    <br>
+                    <br>
+                    Bis bald.
+                    Ralf
+                </p>
+                <hr>
                 <div v-for="(exercise, index) in exercises" :key="index" class="exercise mb-4">
                     <p>
                         {{ exercise.before }}
@@ -186,7 +240,6 @@ export default {
                         </span>
                         Die richtige Antwort ist: <strong>{{ exercise.correctAnswer }}</strong>
                     </p>
-
                 </div>
                 <p>
                     Bis bald.
