@@ -11,7 +11,12 @@ export default {
     data() {
         return {
             showModal: false,
+            showText: false,
             currentDescription: "",
+            timerActive: false,
+            timerFinished: false,
+            timer: null,
+            countdown: 180,
             notaDescriptions: {},
             currentNota: "",
             exercises: [
@@ -144,12 +149,50 @@ export default {
             ],
         };
     },
+    computed: {
+        // Verifica se tutti gli esercizi sono completati
+        allExercisesCompleted() {
+            return this.exercises.every((exercise) => exercise.checked && exercise.correct);
+        },
+        // Formatta il tempo in minuti e secondi
+        formattedCountdown() {
+            const minutes = Math.floor(this.countdown / 60);
+            const seconds = this.countdown % 60;
+            return `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+        }
+    },
     methods: {
+        // Mostra o nasconde il testo e avvia il timer
+        toggleText() {
+            if (!this.showText) {
+                this.showText = true;
+                this.startTimer();
+            }
+        },
+        // Avvia il timer di 3 minuti
+        startTimer() {
+            if (!this.timerActive) {
+                this.timerActive = true;
+                this.timer = setInterval(() => {
+                    if (this.countdown > 0) {
+                        this.countdown--;
+                    } else {
+                        this.timerFinished = true;
+                        this.showText = false; // Nascondi il testo
+                        clearInterval(this.timer);
+                    }
+                }, 1000);
+            }
+        },
         checkAllAnswers() {
             this.exercises.forEach((exercise) => {
                 exercise.checked = true;
                 exercise.correct = exercise.userAnswer === exercise.correctAnswer;
             });
+            // Se tutti gli esercizi sono corretti, sblocca la riapertura del testo
+            if (this.allExercisesCompleted) {
+                this.timerFinished = false;
+            }
         },
         refreshExercises() {
             this.exercises.forEach((exercise) => {
@@ -157,7 +200,7 @@ export default {
                 exercise.checked = false;
                 exercise.correct = false;
             });
-        },
+        }
     },
 };
 </script>
@@ -166,10 +209,23 @@ export default {
     <div class="container my-5">
         <UrlaubMenu></UrlaubMenu>
         <div class="row justify-content-center">
+            <div class="col-1">
+                <p v-if="timerActive && showText" class="text-danger timer ">
+                     {{ formattedCountdown }}
+                </p>
+            </div>
+
             <div class="col-12 col-lg-8">
                 <h1>Ergänzen Sie</h1>
                 <h4>Eine Postkarte aus dem Urlaub - Weltreise</h4>
-                <p>
+                <p>Du hast noch 3 Minuten, um den Text zu lesen.</p>
+                <button @click="toggleText" class="btn btn-info mb-3"
+                    :disabled="timerFinished && !allExercisesCompleted">
+                    {{ showText ? 'Text verbergen' : 'Text anzeigen' }}
+                </button>
+
+
+                <p v-if="showText">
                     Hallo Sven, wie geht es dir?
                     Unsere Weltreise hat gut angefangen.
                     <br>
@@ -288,4 +344,26 @@ select.form-select-inline {
     border-radius: 4px;
     margin-top: 20px;
 }
+
+.btn-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.timer {
+    position: fixed;
+    top: 200px;
+    left: 300px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 1000; /* Mantiene il timer al di sopra di altri elementi della pagina */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 </style>
