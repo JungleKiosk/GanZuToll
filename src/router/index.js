@@ -15,6 +15,9 @@ import uhraufgaben from "../components/thema/uhr/uhraufgaben.vue";
 import Zahlen from "../components/thema/zahlen/Zahlen.vue";
 import zahlenaufgaben from "../components/thema/zahlen/zahlenaufgaben.vue";
 import massnahmen from "../components/thema/zahlen/massnahmen.vue";
+/* URLAUB */
+import Urlaub from "../components/thema/urlaub/Urlaub.vue";
+import urlaubaufgaben from "../components/thema/urlaub/urlaubaufgaben.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -81,6 +84,17 @@ const router = createRouter({
       name: "massnahmen",
       component: massnahmen,
     },
+    /* URLAUB */
+    {
+      path: "/urlaub",
+      name: "urlaub",
+      component: Urlaub,
+    },
+    {
+      path: "/urlaubaufgaben",
+      name: "urlaubaufgaben",
+      component: urlaubaufgaben,
+    }
   ],
 });
 
