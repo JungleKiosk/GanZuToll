@@ -34,7 +34,7 @@ export default {
         <ZahlenMenu></ZahlenMenu>
         <div class="row justify-content-center">
             <div class="col-12 col-lg-6">
-                <img src="../../../assets/img/numbers/numbers.jpg" alt="Numeri tedeschi">
+                <!-- <img src="../../../assets/img/numbers/numbers.jpg" alt="Numeri tedeschi"> -->
                 <h1>Die Zahlen 🧮</h1>
 
                 <h2>Zahlen von 0 bis 12</h2>

@@ -19,13 +19,15 @@ export default {
                         { speaker: "Kunde", text: "Hier sind vier Euro." },
                         { speaker: "Gemüsehändler", text: "Danke, und hier sind fünfzig Cent zurück." },
                     ],
-                    explanation: "In diesem Dialog bestellt der Kunde Obst. Das Wort 'Gemüsehändler' bedeutet 'venditore di verdura'. Beachte, wie der Preis gesagt wird: 'drei Euro und fünfzig Cent', indicando prima l'importo in euro e poi i centesimi. "
+                    explanation: "'3 Euro und 50 Cent', prima l'importo in euro e poi i centesimi. "
                     ,
                     words: {
                         "Kunde": "cliente",
                         "Gemüsehändler": "venditore di verdura",
                         "Euro": "euro",
-                        "Cent": "centesimo"
+                        "Cent": "centesimo",
+                        "zurück": "indietro"
+
                     }
                 },
                 {
@@ -37,10 +39,10 @@ export default {
                         { speaker: "Kunde", text: "Hier sind fünf Euro." },
                         { speaker: "Kellner", text: "Danke, hier ist Ihr Wechselgeld: achtzig Cent." },
                     ],
-                    explanation: "In dieser Szene bestellt der Kunde in einer Cafeteria. Das Wort 'Kellner' bedeutet 'cameriere'. Beim Zahlen sagt man 'vier Euro und zwanzig Cent' für il prezzo. Der Kunde gibt fünf Euro und bekommt Wechselgeld.",
+                    explanation: "Der Kunde gibt fünf Euro und bekommt Wechselgeld.",
                     words: {
                         "Kellner": "cameriere",
-                        "Kunde": "cliente",
+                        "Stück Kuchen": "fetta di torta",
                         "Wechselgeld": "resto"
                     }
                 },
@@ -52,7 +54,7 @@ export default {
                         { speaker: "Besucher", text: "Wir sind zu dritt. Hier sind vierundzwanzig Euro." },
                         { speaker: "Verkäufer", text: "Danke schön, viel Spaß auf der Messe!" },
                     ],
-                    explanation: "In diesem Dialog fragt der Besucher nach dem Preis des Eintritts. Das Wort 'Verkäufer' bedeutet 'venditore'. Er zahlt für drei Personen, und sagt 'vierundzwanzig Euro', combinando numeri composti.",
+                    explanation: "Er zahlt für drei Personen, und sagt 'vierundzwanzig Euro', combinando numeri composti.",
                     words: {
                         "Besucher": "visitatore",
                         "Verkäufer": "venditore",
@@ -83,7 +85,6 @@ export default {
 
             <!-- Spiegazione sotto la box -->
             <div class="explanation mt-3">
-                <h4>Spiegazione</h4>
                 <p>{{ dialogue.explanation }}</p>
                 <h5>Parole chiave:</h5>
                 <ul>
