@@ -16,7 +16,7 @@ export default {
             timerActive: false,
             timerFinished: false,
             timer: null,
-            countdown: 180,
+            countdown: 160,
             notaDescriptions: {},
             currentNota: "",
             exercises: [
@@ -150,11 +150,9 @@ export default {
         };
     },
     computed: {
-        // Verifica se tutti gli esercizi sono completati
         allExercisesCompleted() {
             return this.exercises.every((exercise) => exercise.checked && exercise.correct);
         },
-        // Formatta il tempo in minuti e secondi
         formattedCountdown() {
             const minutes = Math.floor(this.countdown / 60);
             const seconds = this.countdown % 60;
@@ -162,14 +160,12 @@ export default {
         }
     },
     methods: {
-        // Mostra o nasconde il testo e avvia il timer
         toggleText() {
             if (!this.showText) {
                 this.showText = true;
                 this.startTimer();
             }
         },
-        // Avvia il timer di 3 minuti
         startTimer() {
             if (!this.timerActive) {
                 this.timerActive = true;
@@ -189,7 +185,6 @@ export default {
                 exercise.checked = true;
                 exercise.correct = exercise.userAnswer === exercise.correctAnswer;
             });
-            // Se tutti gli esercizi sono corretti, sblocca la riapertura del testo
             if (this.allExercisesCompleted) {
                 this.timerFinished = false;
             }
