@@ -8,7 +8,7 @@ export default {
         ZahlenMenu,
         Modal
     },
-    data() { 
+    data() {
         return {
             dialogues: [
                 {
@@ -70,28 +70,35 @@ export default {
 <template>
     <div class="container my-5">
         <ZahlenMenu></ZahlenMenu>
-        <h1>Zahlen im Alltagslebena</h1>
-        <p>In questa sezione, puoi esercitarti con i numeri in situazioni quotidiane. Leggi i dialoghi qui sotto e fai attenzione a come vengono usati i numeri.</p>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <h1>Zahlen im Alltagslebena</h1>
+                <p>In questa sezione, puoi esercitarti con i numeri in situazioni quotidiane. Leggi i dialoghi qui sotto
+                    e fai attenzione a come vengono usati i numeri.</p>
 
-        <div v-for="(dialogue, index) in dialogues" :key="index" class="dialogue-section my-4 text-dark">
-            <h2>{{ dialogue.scenario }}</h2>
+                <div v-for="(dialogue, index) in dialogues" :key="index" class="dialogue-section my-4 text-dark">
+                    <h2>{{ dialogue.scenario }}</h2>
 
-            <!-- Box del dialogo -->
-            <div class="dialogue-box">
-                <div v-for="(line, idx) in dialogue.dialogue" :key="idx" class="dialogue-line">
-                    <strong>{{ line.speaker }}:</strong> {{ line.text }}
+                    <!-- Box del dialogo -->
+                    <div class="dialogue-box">
+                        <div v-for="(line, idx) in dialogue.dialogue" :key="idx" class="dialogue-line">
+                            <strong>{{ line.speaker }}:</strong> {{ line.text }}
+                        </div>
+                    </div>
+
+                    <!-- Spiegazione sotto la box -->
+                    <div class="explanation mt-3">
+                        <p>{{ dialogue.explanation }}</p>
+                        <h5>Parole chiave:</h5>
+                        <ul>
+                            <li v-for="(meaning, word) in dialogue.words" :key="word"><strong>{{ word }}</strong>: {{
+                                meaning }}</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <!-- Spiegazione sotto la box -->
-            <div class="explanation mt-3">
-                <p>{{ dialogue.explanation }}</p>
-                <h5>Parole chiave:</h5>
-                <ul>
-                    <li v-for="(meaning, word) in dialogue.words" :key="word"><strong>{{ word }}</strong>: {{ meaning }}</li>
-                </ul>
-            </div>
         </div>
+
     </div>
 </template>
 

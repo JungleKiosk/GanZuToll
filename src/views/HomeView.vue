@@ -26,6 +26,7 @@ export default {
           Sie finden hier einige wichtige Regeln und Konzepte, um die deutsche Sprache besser zu verstehen. Lernen Sie
           die Theorie, um eine solide Grundlage zu schaffen.
         </p>
+        <router-link class="btn_index" to="/theorie">Theorie</router-link>
       </div>
       <div class="col-12 col-lg-8 my-5">
         <img src="../assets/img/home/home_1.png" alt="">
@@ -37,6 +38,7 @@ export default {
         <p class="lead">
           Vertiefen Sie Ihre Kenntnisse und erweitern Sie Ihr Verständnis für die Sprache.
         </p>
+        <router-link class="btn_index" to="/vertiefungen">Vertiefungen</router-link>
       </div>
       <div class="col-12 col-lg-8 my-5">
         <img style="width: 100%;" src="../assets/img/home/home_2.png" alt="">
@@ -47,6 +49,8 @@ export default {
         <p class="lead">
           Nach der Lektüre der Theorie und der Erkenntnisse können Sie Ihr Wissen in der Praxis testen!
         </p>
+        <router-link class="btn_index" to="/ubung">Vertiefungen</router-link>
+
       </div>
       <div class="col-12 col-lg-8">
         <img src="../assets/img/home/home_3.png" alt="">

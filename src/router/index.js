@@ -2,6 +2,9 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import HomeView from "../views/HomeView.vue";
 import HomeThemaVue from "../components/thema/HomeThemaVue.vue";
+import TheorieView from "../views/TheorieView.vue";
+import VertiefungenView from "../views/VertiefungenView.vue";
+import UbungView from "../views/UbungView.vue";
 /* HERBST */
 import Herbst from "../components/thema/herbst/Herbst.vue";
 import food from "../components/thema/herbst/food.vue";
@@ -26,6 +29,21 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
+    },
+    {
+      path: "/theorie",
+      name: "theorie",
+      component: TheorieView,
+    },
+    {
+      path: "/vertiefungen",
+      name: "vertiefungen",
+      component: VertiefungenView,
+    },
+    {
+      path: "/ubung",
+      name: "ubung",
+      component: UbungView,
     },
     {
       path: "/thema",
@@ -94,7 +112,7 @@ const router = createRouter({
       path: "/urlaubaufgaben",
       name: "urlaubaufgaben",
       component: urlaubaufgaben,
-    }
+    },
   ],
 });
 
