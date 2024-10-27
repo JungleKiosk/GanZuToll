@@ -101,12 +101,12 @@ export default {
         <li>Sie<span class="dict"> isst</span> eine<span class="dict">n</span> Apfel — Lei mangia una mela</li>
         <li>Wir<span class="dict"> kaufen</span> die Bücher — Noi compriamo i libri</li>
         <li>Ich<span class="dict"> trinke</span> de<span class="dict">n</span> Saft — Bevo il succo</li>
-        <li>Ich<span class="dict"> gehe</span> in de<span class="dict">n</span> Park — Vado nel parco</li>
-        <li>Sie<span class="dict"> rennt</span> durch die Straße — Lei corre per la strada</li>
-        <li>Wir<span class="dict"> fliegen</span> über die Berge — Noi voliamo sopra le montagne</li>
-        <li>Er<span class="dict"> geht</span> um de<span class="dict">n</span> See — Lui gira intorno al lago</li>
-        <li>Ich<span class="dict"> fahre</span> auf die Insel — Vado sull'isola</li>
-        <li>Ich<span class="dict"> fahre</span> in de<span class="dict">n</span> Berg — Vado in montagna</li>
+        <li>Ich<span class="dict"> gehe</span> <span style="text-decoration: underline;">in</span> de<span class="dict">n</span> Park — Vado nel parco</li>
+        <li>Sie<span class="dict"> rennt</span> <span style="text-decoration: underline;">durch</span> die Straße — Lei corre per la strada</li>
+        <li>Wir<span class="dict"> fliegen</span> <span style="text-decoration: underline;">über</span> die Berge — Noi voliamo sopra le montagne</li>
+        <li>Er<span class="dict"> geht</span> <span style="text-decoration: underline;">um</span> de<span class="dict">n</span> See — Lui gira intorno al lago</li>
+        <li>Ich<span class="dict"> fahre</span> <span style="text-decoration: underline;">auf</span> die Insel — Vado sull'isola</li>
+        <li>Ich<span class="dict"> fahre</span> <span style="text-decoration: underline;">in</span> de<span class="dict">n</span> Berg — Vado in montagna</li>
     </ul>
 
     <h4>Forme dell'Accusativo</h4>
