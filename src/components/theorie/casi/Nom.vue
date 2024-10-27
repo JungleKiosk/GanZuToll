@@ -46,7 +46,7 @@ export default {
     <p>Il caso nominativo in tedesco svolge la funzione di indicare il soggetto della frase, rispondendo alla domanda
         <strong class="dict">Wer / Was?</strong> = Chi / cosa compie l'azione?
     </p>
-    <h2>Uso del Nominativo con i Verbi di Stato</h2>
+    <h3>Uso del Nominativo con i Verbi di Stato</h3>
     <p>Il caso nominativo viene utilizzato con i verbi di stato come:
     <ul>
         <li><strong class="dict">sein</strong> (essere)</li>
@@ -67,7 +67,7 @@ export default {
         <li>Die Aufgabe <span class="dict">scheint</span> einfach. — Il compito sembra facile</li>
     </ul>
 
-    <h2>Forme del Nominativo</h2>
+    <h4>Forme del Nominativo</h4>
     <div class="table-responsive">
         <table class="table table-bordered text-center">
             <thead>
