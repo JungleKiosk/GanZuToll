@@ -142,7 +142,10 @@ export default {
 <template>
     <div class="container my-5">
         <div class="row">
-            <div class="col-12 col-lg-4">
+            <h1>Mach alle drei Übungen!</h1>
+            <br>
+            <div class="col-12 col-lg-4 my-5">
+                <hr>
                 <h2>1. Gli articoli determinativi</h2>
                 <p>Inserisci gli articoli corretti all'accusativo.</p>
                 <div v-for="(exercise, index) in determinativeExercises" :key="'determinative-' + index"
@@ -163,7 +166,8 @@ export default {
                     class="btn btn-primary mx-3">korrigieren</button>
                 <button @click="resetExercise('determinativeExercises')" class="btn btn-light mx-3">🔃</button>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 my-5">
+                <hr>
                 <h2>2. Gli articoli indeterminativi</h2>
                 <p>Inserisci gli articoli corretti all'accusativo.</p>
                 <div v-for="(exercise, index) in indeterminateExercises" :key="'indeterminate-' + index"
@@ -185,7 +189,8 @@ export default {
                 <button @click="resetExercise('indeterminateExercises')" class="btn btn-light mx-3">🔃</button>
 
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 my-5">
+                <hr>
                 <h2>3. Quale dei nomi sta all'accusativo?</h2>
                 <div v-for="(exercise, index) in accusativeSelection" :key="'selection-' + index"
                     class="question-section">
