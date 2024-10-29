@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-    <div class="container mt-5">
+    <div id="casi" class="container my-5">
         <h1>I Casi</h1>
         <p>
             In tedesco, i casi servono per indicare la funzione che un <span class="dict">sostantivo</span>,

@@ -30,10 +30,10 @@ export default {
 
 <template>
     <div class="container my-5">
-        <h1 class="dict">Gli Articoli in Tedesco</h1>
+        <h1>Trick ⚡</h1>
 
         <p>
-            In tedesco, i sostantivi sono accompagnati da un articolo che ne indica il genere. Qui troverai alcune
+            Qui troverai alcune
             regole di base per capire meglio
             quando usare gli articoli <strong>DER</strong>, <strong>DIE</strong>, e <strong>DAS</strong>.
         </p>

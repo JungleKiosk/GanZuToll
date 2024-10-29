@@ -8,9 +8,6 @@ export default {
     methods: {
         toggleMenu() {
             this.menuOpen = !this.menuOpen;
-        },
-        closeMenu() {
-            this.menuOpen = false;
         }
     }
 };
@@ -25,12 +22,14 @@ export default {
 
         <!-- Menu Laterale Scorrevole -->
         <div class="side-menu" :class="{ 'open': menuOpen }">
-            <button class="close-btn" @click="closeMenu">✕</button>
-            <h2>Sezioni</h2>
+            <h2>Index</h2>
+            <hr>
             <ul>
-                <li><a href="#articoli">Articoli</a></li>
-                <li><a href="#verbi">Verbi</a></li>
-                <!-- Aggiungi altre sezioni del menu -->
+                <li><h4><a href="#casi">1. Casi</a></h4></li>
+                <ul>
+                    <li><a href="#nominativo">Nominativo</a></li>
+                    <li><a href="#accusativo">Accusativo</a></li>
+                </ul>
             </ul>
         </div>
     </div>
@@ -70,22 +69,10 @@ export default {
     transform: translateX(0);
 }
 
-/* Pulsante di Chiusura del Menu */
-.close-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-    color: #333;
-}
-
 /* Stile per i Link del Menu */
 .side-menu h2 {
     margin-top: 50px;
-    color: #007bff;
+    color: rgb(255, 140, 0);
 }
 
 .side-menu ul {
@@ -99,13 +86,13 @@ export default {
 }
 
 .side-menu ul li a {
-    color: #333;
+    color: #12104b;
     text-decoration: none;
     font-weight: bold;
 }
 
 .side-menu ul li a:hover {
-    color: #007bff;
+    color: rgb(255, 140, 0);
 }
 
 /* Modifica per il menu in modalità mobile */

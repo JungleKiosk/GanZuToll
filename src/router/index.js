@@ -5,6 +5,10 @@ import HomeThemaVue from "../components/thema/HomeThemaVue.vue";
 import TheorieView from "../views/TheorieView.vue";
 import VertiefungenView from "../views/VertiefungenView.vue";
 import UbungView from "../views/UbungView.vue";
+/* Ubung */
+import ubung_cards from "../components/ubung/ubung_cards.vue";
+import acc_aufgaben from "../components/ubung/acc_aufgaben.vue";
+
 /* HERBST */
 import Herbst from "../components/thema/herbst/Herbst.vue";
 import food from "../components/thema/herbst/food.vue";
@@ -44,6 +48,16 @@ const router = createRouter({
       path: "/ubung",
       name: "ubung",
       component: UbungView,
+    },
+    {
+      path: "/ubung_cards",
+      name: "ubung_cards",
+      component: ubung_cards,
+    },
+    {
+      path: "/acc_aufgaben",
+      name: "acc_aufgaben",
+      component: acc_aufgaben,
     },
     {
       path: "/thema",

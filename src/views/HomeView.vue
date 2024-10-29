@@ -49,7 +49,7 @@ export default {
         <p class="lead">
           Nach der Lektüre der Theorie und der Erkenntnisse können Sie Ihr Wissen in der Praxis testen!
         </p>
-        <router-link class="btn_index" to="/">Vertiefungen</router-link>
+        <router-link class="btn_index" to="/ubung_cards">Übung</router-link>
 
       </div>
       <div class="col-12 col-lg-8">

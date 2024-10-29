@@ -8,7 +8,8 @@ export default {
   name: 'App',
   components: {
     FooterVue,
-    NavbarVue
+    NavbarVue,
+
   },
   setup() {
     const route = useRoute();
@@ -50,8 +51,8 @@ export default {
 
   <div class="content mt-5 pt-5">
     <router-view />
-  </div>
 
+  </div>
   <FooterVue />
 </template>
 
