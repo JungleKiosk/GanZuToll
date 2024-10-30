@@ -9,6 +9,11 @@ export default {
                     description: "Üben Sie den Akkusativ und lernen Sie, das direkte Objekt in einem Satz zu erkennen.",
                     route: "/acc_aufgaben"
                 },
+                {
+                    title: "Artikel",
+                    description: "",
+                    route: "/artikel_ubung"
+                },
 
             ]
         };

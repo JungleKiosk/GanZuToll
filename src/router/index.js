@@ -8,6 +8,7 @@ import UbungView from "../views/UbungView.vue";
 /* Ubung */
 import ubung_cards from "../components/ubung/ubung_cards.vue";
 import acc_aufgaben from "../components/ubung/acc_aufgaben.vue";
+import artikel_ubung from "../components/ubung/artikel_ubung.vue";
 
 
 
@@ -63,6 +64,12 @@ const router = createRouter({
       name: "acc_aufgaben",
       component: acc_aufgaben,
     },
+    {
+      path: "/artikel_ubung",
+      name: "artikel_ubung",
+      component: artikel_ubung,
+    },
+    /* THEMEN */
     {
       path: "/thema",
       name: "thema",

@@ -1,5 +1,4 @@
 <script>
-import { hasScopeRef } from '@vue/compiler-core';
 import ArtikelMenu from './ArtikelMenu.vue';
 
 export default {
