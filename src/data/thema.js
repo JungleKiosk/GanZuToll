@@ -25,4 +25,11 @@ export const themen = [
     description: "",
     route: "/events",
   }
+  ,
+  {
+    id: 5,
+    name: "Artikel",
+    description: "",
+    route: "/artikel",
+  }
 ];

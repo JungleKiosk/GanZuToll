@@ -13,20 +13,22 @@ export default {
 <template>
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
+            <div class="col-12">
                 <h1>Vertiefungen</h1>
-                <p>Benvenuto nella sezione "Vertiefungen"! Qui troverai risorse per approfondire la tua conoscenza della
-                    lingua tedesca.</p>
-                
+                <p>
+                    Hier finden Sie Ressourcen, um Ihre Kenntnisse der deutschen
+                    Sprache zu vertiefen.
+                </p>
+
 
                 <div>
 
-                    <VertiefungenCards />
                 </div>
             </div>
         </div>
 
     </div>
+    <VertiefungenCards />
 </template>
 
 <style scoped>

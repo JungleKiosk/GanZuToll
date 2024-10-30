@@ -5,11 +5,11 @@ export default {
         return {
             topics: [
                 {
-                    title: "Accusativo",
-                    description: "Esercitati con il caso accusativo e impara a riconoscere l'oggetto diretto in una frase.",
-                    route: "/acc_aufgaben" // Rotta verso il componente dell'esercizio
+                    title: "Akkusativ",
+                    description: "Üben Sie den Akkusativ und lernen Sie, das direkte Objekt in einem Satz zu erkennen.",
+                    route: "/acc_aufgaben"
                 },
-                // Aggiungi altre card con argomenti diversi
+
             ]
         };
     }
@@ -28,7 +28,7 @@ export default {
                         <div class="card-body">
                             <h5 class="card-title">{{ topic.title }}</h5>
                             <p class="card-text">{{ topic.description }}</p>
-                            <router-link :to="topic.route" class="btn_index">Inizia Esercizio</router-link>
+                            <router-link :to="topic.route" class="btn_index">Übung starten</router-link>
                         </div>
                     </div>
                 </div>

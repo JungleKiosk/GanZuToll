@@ -147,7 +147,7 @@ export default {
             <div class="col-12 col-lg-4 my-5">
                 <hr>
                 <h2>1. Gli articoli determinativi</h2>
-                <p>Inserisci gli articoli corretti all'accusativo.</p>
+                <p>Setzen Sie die richtigen Artikel im Akkusativ ein.</p>
                 <div v-for="(exercise, index) in determinativeExercises" :key="'determinative-' + index"
                     class="question-section">
                     <p>{{ exercise.sentence.replace("___", "____") }}</p>
@@ -169,7 +169,7 @@ export default {
             <div class="col-12 col-lg-4 my-5">
                 <hr>
                 <h2>2. Gli articoli indeterminativi</h2>
-                <p>Inserisci gli articoli corretti all'accusativo.</p>
+                <p>Setzen Sie die richtigen Artikel im Akkusativ ein.</p>
                 <div v-for="(exercise, index) in indeterminateExercises" :key="'indeterminate-' + index"
                     class="question-section">
                     <p>{{ exercise.sentence.replace("___", "____") }}</p>
@@ -229,7 +229,6 @@ export default {
 }
 
 
-
 .question-section {
     margin-bottom: 20px;
 }
@@ -248,7 +247,7 @@ label {
     color: green;
 }
 
-.incorrect {
+.incorrect{
     color: red;
 }
 </style>

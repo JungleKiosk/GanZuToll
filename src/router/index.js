@@ -9,6 +9,8 @@ import UbungView from "../views/UbungView.vue";
 import ubung_cards from "../components/ubung/ubung_cards.vue";
 import acc_aufgaben from "../components/ubung/acc_aufgaben.vue";
 
+
+
 /* HERBST */
 import Herbst from "../components/thema/herbst/Herbst.vue";
 import food from "../components/thema/herbst/food.vue";
@@ -25,6 +27,8 @@ import massnahmen from "../components/thema/zahlen/massnahmen.vue";
 /* URLAUB */
 import Urlaub from "../components/thema/urlaub/Urlaub.vue";
 import urlaubaufgaben from "../components/thema/urlaub/urlaubaufgaben.vue";
+/* ARTIKEL */
+import artikel from "../components/thema/artikel/artikel.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -126,6 +130,12 @@ const router = createRouter({
       path: "/urlaubaufgaben",
       name: "urlaubaufgaben",
       component: urlaubaufgaben,
+    },
+    /* ARTIKEL */
+    {
+      path: "/artikel",
+      name: "artikel",
+      component: artikel,
     },
   ],
 });
