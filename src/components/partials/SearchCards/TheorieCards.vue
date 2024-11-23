@@ -73,7 +73,7 @@ export default {
 /* Stile per i Link del Menu */
 .side-menu h2 {
     margin-top: 50px;
-    color: rgb(255, 140, 0);
+    color: rgb(0, 0, 0);
 }
 
 .side-menu ul {

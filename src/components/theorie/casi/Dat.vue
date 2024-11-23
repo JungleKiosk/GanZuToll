@@ -141,7 +141,7 @@ export default {
             <strong>Nota:</strong> Il dativo può essere solo “de<strong class="dict">m</strong>” o “de<strong class="dict">r</strong>” per
             il singolare e “de<strong class="dict">n</strong>” per il plurale.
             <br>
-            <strong>Nota:</strong> Il plurale richiede l'aggiunta di <code>-n</code> alla fine del sostantivo, se non è
+            <strong>Nota:</strong> Il plurale richiede l'aggiunta del <strong class="dict">n</strong> alla fine del sostantivo, se non è
             già presente.
         </p>
 
