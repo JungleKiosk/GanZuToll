@@ -2,6 +2,12 @@
 
 export const themen = [
   {
+    id: 5,
+    name: "Artikel",
+    description: "",
+    route: "/artikel",
+  },
+  {
     id: 1,
     name: "Zahlen",
     description: "",
@@ -26,10 +32,4 @@ export const themen = [
     route: "/events",
   }
   ,
-  {
-    id: 5,
-    name: "Artikel",
-    description: "",
-    route: "/artikel",
-  }
 ];

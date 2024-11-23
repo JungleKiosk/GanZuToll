@@ -134,9 +134,9 @@ export default {
                 <h2>Das Grammatische Geschlecht</h2>
                 <p>Alle deutsch Nomen haben ein Geschlecht (Genus):
                 <ul>
-                    <li>DIE - 46% der Nomen sind feminin (weiblich auch genannt )</li>
-                    <li>DER - 34% der Nomen sind maskulin (männlich auch genannt )</li>
-                    <li>DAS - 20% der Nomen sind neutrum (sächlich auch genannt )</li>
+                    <li><span class="fw-bold">DIE</span> - 46% der Nomen sind feminin (weiblich auch genannt )</li>
+                    <li><span class="fw-bold">DER</span> - 34% der Nomen sind maskulin (männlich auch genannt )</li>
+                    <li><span class="fw-bold">DAS</span> - 20% der Nomen sind neutrum (sächlich auch genannt )</li>
                 </ul>
                 </p>
             </div>

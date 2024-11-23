@@ -42,7 +42,8 @@ export default {
 </script>
 
 <template>
-    <h2 id="nominativo" class="mt-5">Nominativo</h2>
+    <div id="nominativo" style="height: 50px;" class="m-5"></div>
+    <h2 class="mt-5">Nominativo</h2>
     <p>Il caso nominativo in tedesco svolge la funzione di indicare il soggetto della frase, rispondendo alla domanda
         <strong class="dict">Wer / Was?</strong> = Chi / cosa compie l'azione?
     </p>

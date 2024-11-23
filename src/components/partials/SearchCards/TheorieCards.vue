@@ -29,6 +29,7 @@ export default {
                 <ul>
                     <li><a href="#nominativo">Nominativo</a></li>
                     <li><a href="#accusativo">Accusativo</a></li>
+                    <li><a href="#dativo">Dativo</a></li>
                 </ul>
             </ul>
         </div>

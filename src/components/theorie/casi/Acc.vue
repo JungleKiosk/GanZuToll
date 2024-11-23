@@ -5,28 +5,28 @@ export default {
         return {
             accusativeForms: [
                 {
-                    definite: "den Mann",
-                    indefinite: "einen Mann",
-                    adjectiveDefinite: "den guten Mann",
-                    adjectiveIndefinite: "einen guten Mann"
+                    category: "Maskulinum",
+                    definite: "den",
+                    indefinite: "einen",
+                    note: "(n)"
                 },
                 {
-                    definite: "die Frau",
-                    indefinite: "eine Frau",
-                    adjectiveDefinite: "die schöne Frau",
-                    adjectiveIndefinite: "eine schöne Frau"
+                    category: "Femininum",
+                    definite: "die",
+                    indefinite: "eine",
+                    note: "(e)"
                 },
                 {
-                    definite: "das Kind",
-                    indefinite: "ein Kind",
-                    adjectiveDefinite: "das junge Kind",
-                    adjectiveIndefinite: "ein junges Kind"
+                    category: "Neutrum",
+                    definite: "das",
+                    indefinite: "ein",
+                    note: "(s)"
                 },
                 {
-                    definite: "die Leute",
-                    indefinite: "Leute",
-                    adjectiveDefinite: "die alten Leute",
-                    adjectiveIndefinite: "alte Leute"
+                    category: "Plural",
+                    definite: "die",
+                    indefinite: "-",
+                    note: "(e)"
                 }
             ]
         };
@@ -35,10 +35,12 @@ export default {
 </script>
 
 <template>
-
+    <div id="accusativo" style="height: 50px;" class="m-5"></div>
     <h2>Accusativo</h2>
     <p>Il caso accusativo svolge la funzione di indicare il complemento oggetto, cioè l’elemento all'interno di una
-        frase che subisce l'azione da parte del soggetto. Risponde alla domanda <strong class="dict">Wen / Was?</strong>
+        frase che subisce l'azione da parte del soggetto.
+        <br>
+        Risponde alla domanda <strong class="dict">Wen / Was?</strong>
         = Chi / che
         cosa?</p>
 
@@ -46,9 +48,31 @@ export default {
         <strong>Nota:</strong> Il femminile e il neutro rimangono invariati rispetto al nominativo.
     </p>
 
+    <h4>Forme dell'Accusativo</h4>
+    <div class="table-responsive">
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Determinativo</th>
+                    <th>Indeterminativo</th>
+                    <th>Declinazione</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="(form, index) in accusativeForms" :key="index">
+                    <td>{{ form.category }}</td>
+                    <td>{{ form.definite }}</td>
+                    <td>{{ form.indefinite }}</td>
+                    <td>{{ form.note }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
     <h3>Uso del Caso Accusativo</h3>
     <ul>
-        <li>Con i verbi che reggono l’accusativo e i verbi di movimento.
+        <li>Verbi che reggono l’accusativo.
             <ul>
                 <li>haben = avere</li>
                 <li>hören = ascoltare</li>
@@ -101,35 +125,21 @@ export default {
         <li>Sie<span class="dict"> isst</span> eine<span class="dict">n</span> Apfel — Lei mangia una mela</li>
         <li>Wir<span class="dict"> kaufen</span> die Bücher — Noi compriamo i libri</li>
         <li>Ich<span class="dict"> trinke</span> de<span class="dict">n</span> Saft — Bevo il succo</li>
-        <li>Ich<span class="dict"> gehe</span> <span style="text-decoration: underline;">in</span> de<span class="dict">n</span> Park — Vado nel parco</li>
-        <li>Sie<span class="dict"> rennt</span> <span style="text-decoration: underline;">durch</span> die Straße — Lei corre per la strada</li>
-        <li>Wir<span class="dict"> fliegen</span> <span style="text-decoration: underline;">über</span> die Berge — Noi voliamo sopra le montagne</li>
-        <li>Er<span class="dict"> geht</span> <span style="text-decoration: underline;">um</span> de<span class="dict">n</span> See — Lui gira intorno al lago</li>
-        <li>Ich<span class="dict"> fahre</span> <span style="text-decoration: underline;">auf</span> die Insel — Vado sull'isola</li>
-        <li>Ich<span class="dict"> fahre</span> <span style="text-decoration: underline;">in</span> de<span class="dict">n</span> Berg — Vado in montagna</li>
+        <li>Ich<span class="dict"> gehe</span> <span style="text-decoration: underline;">in</span> de<span
+                class="dict">n</span> Park — Vado nel parco</li>
+        <li>Sie<span class="dict"> rennt</span> <span style="text-decoration: underline;">durch</span> die Straße — Lei
+            corre per la strada</li>
+        <li>Wir<span class="dict"> fliegen</span> <span style="text-decoration: underline;">über</span> die Berge — Noi
+            voliamo sopra le montagne</li>
+        <li>Er<span class="dict"> geht</span> <span style="text-decoration: underline;">um</span> de<span
+                class="dict">n</span> See — Lui gira intorno al lago</li>
+        <li>Ich<span class="dict"> fahre</span> <span style="text-decoration: underline;">auf</span> die Insel — Vado
+            sull'isola</li>
+        <li>Ich<span class="dict"> fahre</span> <span style="text-decoration: underline;">in</span> de<span
+                class="dict">n</span> Berg — Vado in montagna</li>
     </ul>
 
-    <h4>Forme dell'Accusativo</h4>
-    <div class="table-responsive">
-        <table class="table table-bordered text-center">
-            <thead>
-                <tr>
-                    <th>Maschile</th>
-                    <th>Femminile</th>
-                    <th>Neutro</th>
-                    <th>Plurale</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="(form, index) in accusativeForms" :key="index">
-                    <td>{{ form.definite }}</td>
-                    <td>{{ form.indefinite }}</td>
-                    <td>{{ form.adjectiveDefinite }}</td>
-                    <td>{{ form.adjectiveIndefinite }}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+
 
 </template>
 

@@ -2,19 +2,22 @@
 import SchemaCasi from './SchemaCasi.vue';
 import Nom from './Nom.vue';
 import Acc from './Acc.vue';
+import Dat from './Dat.vue';
 
 export default {
     name: "Casi",
     components: {
         SchemaCasi,
         Nom,
-        Acc
+        Acc,
+        Dat
     }
 };
 </script>
 
 <template>
-    <div id="casi" class="container my-5">
+    <div id="casi" style="height: 50px;" class="m-5"></div>
+    <div class="container my-5">
         <h1>I Casi</h1>
         <p>
             In tedesco, i casi servono per indicare la funzione che un <span class="dict">sostantivo</span>,
@@ -49,6 +52,7 @@ export default {
         <SchemaCasi></SchemaCasi>
         <Nom></Nom>
         <Acc></Acc>
+        <Dat></Dat>
 
         <div v-for="(caseItem, index) in cases" :key="index" class="case-section mt-4 text-dark">
             <h2>{{ caseItem.title }}</h2>

@@ -7,7 +7,7 @@ import { links_footer } from '../../data/link_footer.js';
   <div id="footer" class="container-fluid bg-dark text-light pt-5">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-3">
-        <h5>nützliche Links</h5>
+        <h5>Quellen</h5>
         <p v-for="(link_footer, index) in links_footer" :key="index">
           <a :href="link_footer.url" target="_blank" class="btn btn-dark">{{ link_footer.name }}</a>
         </p>
